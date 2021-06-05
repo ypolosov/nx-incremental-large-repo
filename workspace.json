@@ -175,7 +175,7 @@
         }
       }
     },
-    "lib0-lib0": {
+    "lib0": {
       "projectType": "library",
       "root": "libs/lib0/lib0",
       "sourceRoot": "libs/lib0/lib0",
@@ -215,15 +215,15 @@
     },
     "lib0-childlib0": {
       "projectType": "library",
-      "root": "libs/lib0/childlib0",
-      "sourceRoot": "libs/lib0/childlib0",
+      "root": "libs/lib0/childlib0/childlib0",
+      "sourceRoot": "libs/lib0/childlib0/childlib0",
       "prefix": "largerepo",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:ng-packagr-lite",
           "options": {
             "tsConfig": "libs/lib0/tsconfig.lib.json",
-            "project": "libs/lib0/childlib0/package.json"
+            "project": "libs/lib0/childlib0/childlib0/package.json"
           },
           "configurations": {
             "production": {
@@ -235,8 +235,8 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/lib0/childlib0/**/*.ts",
-              "libs/lib0/childlib0/**/*.html"
+              "libs/lib0/childlib0/childlib0/**/*.ts",
+              "libs/lib0/childlib0/childlib0/**/*.html"
             ]
           }
         },
@@ -246,7 +246,45 @@
             "jestConfig": "libs/lib0/jest.config.js",
             "passWithNoTests": true
           },
-          "outputs": ["coverage/libs/lib0/childlib0"]
+          "outputs": ["coverage/libs/lib0/childlib0/childlib0"]
+        }
+      },
+      "schematics": {}
+    },
+    "lib0-childlib0-lib0childlib0component0": {
+      "projectType": "library",
+      "root": "libs/lib0/childlib0/lib0childlib0component0/lib0childlib0component0",
+      "sourceRoot": "libs/lib0/childlib0/lib0childlib0component0/lib0childlib0component0",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/lib0/tsconfig.lib.json",
+            "project": "libs/lib0/childlib0/lib0childlib0component0/lib0childlib0component0/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/lib0/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/lib0/childlib0/lib0childlib0component0/lib0childlib0component0/**/*.ts",
+              "libs/lib0/childlib0/lib0childlib0component0/lib0childlib0component0/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/lib0/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/lib0/childlib0/lib0childlib0component0/lib0childlib0component0"]
         }
       },
       "schematics": {}

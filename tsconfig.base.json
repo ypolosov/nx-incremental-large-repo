@@ -21,11 +21,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@largerepo/lib0/lib0": [
-        "libs/lib0/lib0/index.ts"
-      ],
-      "@largerepo/lib0/childlib0": [
-        "libs/lib0/childlib0/index.ts"
+      "@largerepo/*": [
+        "libs/*"
       ]
     }
   },
