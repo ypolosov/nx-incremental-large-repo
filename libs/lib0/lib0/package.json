@@ -1,9 +1,0 @@
-{
-  "name": "@largerepo/lib0/lib0",
-  "ngPackage": {
-    "dest": "../../../dist/libs/lib0/lib0",
-    "lib": {
-      "entryFile": "index.ts"
-    }
-  }
-}
