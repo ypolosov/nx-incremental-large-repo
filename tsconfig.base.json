@@ -22,10 +22,10 @@
     "baseUrl": ".",
     "paths": {
       "@largerepo/app0/lib0/lib0": [
-        "libs/app0/lib0/lib0/src/index.ts"
+        "libs/app0/lib0/lib0/index.ts"
       ],
       "@largerepo/app0/lib0/childlib0": [
-        "libs/app0/lib0/childlib0/src/index.ts"
+        "libs/app0/lib0/childlib0/index.ts"
       ]
     }
   },
