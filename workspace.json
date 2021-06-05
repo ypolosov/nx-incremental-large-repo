@@ -185,7 +185,7 @@
           "builder": "@nrwl/angular:ng-packagr-lite",
           "options": {
             "tsConfig": "libs/lib0/tsconfig.lib.json",
-            "project": "libs/lib0/lib0/ng-package.json"
+            "project": "libs/lib0/lib0/package.json"
           },
           "configurations": {
             "production": {
@@ -223,7 +223,7 @@
           "builder": "@nrwl/angular:ng-packagr-lite",
           "options": {
             "tsConfig": "libs/lib0/tsconfig.lib.json",
-            "project": "libs/lib0/childlib0/ng-package.json"
+            "project": "libs/lib0/childlib0/package.json"
           },
           "configurations": {
             "production": {

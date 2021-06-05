@@ -1,9 +1,9 @@
 {
   "name": "@largerepo/lib0/childlib0",
-  "version": "0.0.1",
-  "peerDependencies": {
-    "@angular/common": "^9.0.6",
-    "@angular/core": "^9.0.6",
-    "tslib": "^1.10.0"
+  "ngPackage": {
+    "dest": "../../../dist/libs/lib0/childlib0",
+    "lib": {
+      "entryFile": "index.ts"
+    }
   }
 }
