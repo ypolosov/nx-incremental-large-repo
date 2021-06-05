@@ -1,5 +1,5 @@
 {
-  "name": "@largerepo/app0/lib0/lib0",
+  "name": "@largerepo/lib0/lib0",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.0.6",

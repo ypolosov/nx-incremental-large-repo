@@ -14,10 +14,10 @@
     "app1": {
       "tags": []
     },
-    "app0-lib0-lib0": {
+    "lib0-lib0": {
       "tags": []
     },
-    "app0-lib0-childlib0": {
+    "lib0-childlib0": {
       "tags": []
     }
   },

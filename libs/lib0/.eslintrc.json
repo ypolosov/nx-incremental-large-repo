@@ -16,7 +16,7 @@
       ],
       "parserOptions": {
         "project": [
-          "libs/app0/lib0/lib0/tsconfig.*?.json"
+          "libs/lib0/lib0/tsconfig.*?.json"
         ]
       },
       "rules": {
