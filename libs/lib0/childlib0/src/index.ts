@@ -1,1 +1,1 @@
-export * from './childlib0.module';
+export * from './module';

@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { Lib0Module } from '@largerepo/lib0/src';
 
-import { AppComponent } from './app.component';
+import { AppComponent } from './impl';
 
 @NgModule({
   declarations: [AppComponent],

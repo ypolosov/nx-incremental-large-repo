@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Lib0childlib0component0Component } from './lib0childlib0component0.component';
-export { Lib0childlib0component0Component } from './lib0childlib0component0.component';
+import { Lib0childlib0component0Component } from './impl';
+export { Lib0childlib0component0Component } from './impl';
 
 @NgModule({
   imports: [CommonModule],
