@@ -1,0 +1,9 @@
+{
+  "name": "@largerepo/lib0/childlib0/impl/testing",
+  "ngPackage": {
+    "dest": "../../../../../dist/libs/lib0/childlib0/impl/testing",
+    "lib": {
+      "entryFile": "index.ts"
+    }
+  }
+}

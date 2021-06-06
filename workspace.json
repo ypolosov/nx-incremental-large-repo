@@ -177,15 +177,15 @@
     },
     "lib0": {
       "projectType": "library",
-      "root": "libs/lib0/src",
-      "sourceRoot": "libs/lib0/src",
+      "root": "libs/lib0/impl/src",
+      "sourceRoot": "libs/lib0/impl/src",
       "prefix": "largerepo",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:ng-packagr-lite",
           "options": {
             "tsConfig": "libs/lib0/tsconfig.lib.json",
-            "project": "libs/lib0/src/package.json"
+            "project": "libs/lib0/impl/src/package.json"
           },
           "configurations": {
             "production": {
@@ -197,8 +197,8 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/lib0/src/**/*.ts",
-              "libs/lib0/src/**/*.html"
+              "libs/lib0/impl/src/**/*.ts",
+              "libs/lib0/impl/src/**/*.html"
             ]
           }
         },
@@ -208,22 +208,22 @@
             "jestConfig": "libs/lib0/jest.config.js",
             "passWithNoTests": true
           },
-          "outputs": ["coverage/libs/lib0/src"]
+          "outputs": ["coverage/libs/lib0/impl/src"]
         }
       },
       "schematics": {}
     },
-    "lib0-childlib0": {
+    "lib0/childlib0": {
       "projectType": "library",
-      "root": "libs/lib0/childlib0/src",
-      "sourceRoot": "libs/lib0/childlib0/src",
+      "root": "libs/lib0/childlib0/impl/src",
+      "sourceRoot": "libs/lib0/childlib0/impl/src",
       "prefix": "largerepo",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:ng-packagr-lite",
           "options": {
             "tsConfig": "libs/lib0/tsconfig.lib.json",
-            "project": "libs/lib0/childlib0/src/package.json"
+            "project": "libs/lib0/childlib0/impl/src/package.json"
           },
           "configurations": {
             "production": {
@@ -235,8 +235,8 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/lib0/childlib0/src/**/*.ts",
-              "libs/lib0/childlib0/src/**/*.html"
+              "libs/lib0/childlib0/impl/src/**/*.ts",
+              "libs/lib0/childlib0/impl/src/**/*.html"
             ]
           }
         },
@@ -246,22 +246,22 @@
             "jestConfig": "libs/lib0/jest.config.js",
             "passWithNoTests": true
           },
-          "outputs": ["coverage/libs/lib0/childlib0/src"]
+          "outputs": ["coverage/libs/lib0/childlib0/impl/src"]
         }
       },
       "schematics": {}
     },
-    "lib0-childlib0-lib0childlib0component0": {
+    "lib0/childlib0/lib0childlib0component0": {
       "projectType": "library",
-      "root": "libs/lib0/childlib0/lib0childlib0component0/src",
-      "sourceRoot": "libs/lib0/childlib0/lib0childlib0component0/src",
+      "root": "libs/lib0/childlib0/lib0childlib0component0/impl/src",
+      "sourceRoot": "libs/lib0/childlib0/lib0childlib0component0/impl/src",
       "prefix": "largerepo",
       "architect": {
         "build": {
           "builder": "@nrwl/angular:ng-packagr-lite",
           "options": {
             "tsConfig": "libs/lib0/tsconfig.lib.json",
-            "project": "libs/lib0/childlib0/lib0childlib0component0/src/package.json"
+            "project": "libs/lib0/childlib0/lib0childlib0component0/impl/src/package.json"
           },
           "configurations": {
             "production": {
@@ -273,8 +273,8 @@
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/lib0/childlib0/lib0childlib0component0/src/**/*.ts",
-              "libs/lib0/childlib0/lib0childlib0component0/src/**/*.html"
+              "libs/lib0/childlib0/lib0childlib0component0/impl/src/**/*.ts",
+              "libs/lib0/childlib0/lib0childlib0component0/impl/src/**/*.html"
             ]
           }
         },
@@ -284,12 +284,401 @@
             "jestConfig": "libs/lib0/jest.config.js",
             "passWithNoTests": true
           },
-          "outputs": ["coverage/libs/lib0/childlib0/lib0childlib0component0/src"]
+          "outputs": ["coverage/libs/lib0/childlib0/lib0childlib0component0/impl/src"]
+        }
+      },
+      "schematics": {}
+    },
+    "baseline/agnostic/model": {
+      "projectType": "library",
+      "root": "libs/baseline/agnostic/model",
+      "sourceRoot": "libs/baseline/agnostic/model",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/baseline/agnostic/tsconfig.lib.json",
+            "project": "libs/baseline/agnostic/model/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/baseline/agnostic/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/baseline/agnostic/model/**/*.ts",
+              "libs/baseline/agnostic/model/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/baseline/agnostic/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/baseline/agnostic/model"]
+        }
+      },
+      "schematics": {}
+    },
+    "baseline/agnostic/impl/src": {
+      "projectType": "library",
+      "root": "libs/baseline/agnostic/impl/src",
+      "sourceRoot": "libs/baseline/agnostic/impl/src",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/baseline/agnostic/tsconfig.lib.json",
+            "project": "libs/baseline/agnostic/impl/src/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/baseline/agnostic/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/baseline/agnostic/impl/src/**/*.ts",
+              "libs/baseline/agnostic/impl/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/baseline/agnostic/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/baseline/agnostic/impl/src"]
+        }
+      },
+      "schematics": {}
+    },
+  
+    "baseline/agnostic/constants/model": {
+      "projectType": "library",
+      "root": "libs/baseline/agnostic/constants/model",
+      "sourceRoot": "libs/baseline/agnostic/constants/model",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/baseline/agnostic/tsconfig.lib.json",
+            "project": "libs/baseline/agnostic/constants/model/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/baseline/agnostic/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/baseline/agnostic/constants/model/**/*.ts",
+              "libs/baseline/agnostic/constants/model/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/baseline/agnostic/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/baseline/agnostic/constants/model"]
+        }
+      },
+      "schematics": {}
+    },
+    "baseline/agnostic/constants/impl/src": {
+      "projectType": "library",
+      "root": "libs/baseline/agnostic/constants/impl/src",
+      "sourceRoot": "libs/baseline/agnostic/constants/impl/src",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/baseline/agnostic/tsconfig.lib.json",
+            "project": "libs/baseline/agnostic/constants/impl/src/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/baseline/agnostic/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/baseline/agnostic/constants/impl/src/**/*.ts",
+              "libs/baseline/agnostic/constants/impl/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/baseline/agnostic/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/baseline/agnostic/constants/impl/src"]
+        }
+      },
+      "schematics": {}
+    },
+  
+    "baseline/agnostic/faker/model": {
+      "projectType": "library",
+      "root": "libs/baseline/agnostic/faker/model",
+      "sourceRoot": "libs/baseline/agnostic/faker/model",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/baseline/agnostic/tsconfig.lib.json",
+            "project": "libs/baseline/agnostic/faker/model/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/baseline/agnostic/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/baseline/agnostic/faker/model/**/*.ts",
+              "libs/baseline/agnostic/faker/model/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/baseline/agnostic/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/baseline/agnostic/faker/model"]
+        }
+      },
+      "schematics": {}
+    },
+    "baseline/agnostic/faker/impl/src": {
+      "projectType": "library",
+      "root": "libs/baseline/agnostic/faker/impl/src",
+      "sourceRoot": "libs/baseline/agnostic/faker/impl/src",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/baseline/agnostic/tsconfig.lib.json",
+            "project": "libs/baseline/agnostic/faker/impl/src/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/baseline/agnostic/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/baseline/agnostic/faker/impl/src/**/*.ts",
+              "libs/baseline/agnostic/faker/impl/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/baseline/agnostic/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/baseline/agnostic/faker/impl/src"]
+        }
+      },
+      "schematics": {}
+    },
+  
+    "baseline/agnostic/ioc/model": {
+      "projectType": "library",
+      "root": "libs/baseline/agnostic/ioc/model",
+      "sourceRoot": "libs/baseline/agnostic/ioc/model",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/baseline/agnostic/tsconfig.lib.json",
+            "project": "libs/baseline/agnostic/ioc/model/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/baseline/agnostic/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/baseline/agnostic/ioc/model/**/*.ts",
+              "libs/baseline/agnostic/ioc/model/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/baseline/agnostic/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/baseline/agnostic/ioc/model"]
+        }
+      },
+      "schematics": {}
+    },
+    "baseline/agnostic/ioc/impl/src": {
+      "projectType": "library",
+      "root": "libs/baseline/agnostic/ioc/impl/src",
+      "sourceRoot": "libs/baseline/agnostic/ioc/impl/src",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/baseline/agnostic/tsconfig.lib.json",
+            "project": "libs/baseline/agnostic/ioc/impl/src/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/baseline/agnostic/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/baseline/agnostic/ioc/impl/src/**/*.ts",
+              "libs/baseline/agnostic/ioc/impl/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/baseline/agnostic/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/baseline/agnostic/ioc/impl/src"]
+        }
+      },
+      "schematics": {}
+    },
+  
+    "baseline/agnostic/logger/model": {
+      "projectType": "library",
+      "root": "libs/baseline/agnostic/logger/model",
+      "sourceRoot": "libs/baseline/agnostic/logger/model",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/baseline/agnostic/tsconfig.lib.json",
+            "project": "libs/baseline/agnostic/logger/model/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/baseline/agnostic/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/baseline/agnostic/logger/model/**/*.ts",
+              "libs/baseline/agnostic/logger/model/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/baseline/agnostic/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/baseline/agnostic/logger/model"]
+        }
+      },
+      "schematics": {}
+    },
+    "baseline/agnostic/logger/impl/src": {
+      "projectType": "library",
+      "root": "libs/baseline/agnostic/logger/impl/src",
+      "sourceRoot": "libs/baseline/agnostic/logger/impl/src",
+      "prefix": "largerepo",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:ng-packagr-lite",
+          "options": {
+            "tsConfig": "libs/baseline/agnostic/tsconfig.lib.json",
+            "project": "libs/baseline/agnostic/logger/impl/src/package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/baseline/agnostic/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/baseline/agnostic/logger/impl/src/**/*.ts",
+              "libs/baseline/agnostic/logger/impl/src/**/*.html"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/baseline/agnostic/jest.config.js",
+            "passWithNoTests": true
+          },
+          "outputs": ["coverage/libs/baseline/agnostic/logger/impl/src"]
         }
       },
       "schematics": {}
     }
   },
+
+
+
+
+
   "cli": {
     "defaultCollection": "@nrwl/angular"
   },

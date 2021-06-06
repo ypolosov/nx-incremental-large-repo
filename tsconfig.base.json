@@ -23,6 +23,9 @@
     "paths": {
       "@largerepo/*": [
         "libs/*"
+      ],
+      "@largerepo/baseline/agnostic/*": [
+        "libs/baseline/agnostic/*"
       ]
     }
   },

@@ -1,0 +1,9 @@
+{
+  "name": "@largerepo/baseline/agnostic/logger/impl/src",
+  "ngPackage": {
+    "dest": "../../../../../../dist/libs/baseline/agnostic/logger/impl/src",
+    "lib": {
+      "entryFile": "index.ts"
+    }
+  }
+}

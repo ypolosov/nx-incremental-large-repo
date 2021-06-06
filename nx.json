@@ -17,10 +17,40 @@
     "lib0": {
       "tags": []
     },
-    "lib0-childlib0": {
+    "lib0/childlib0": {
       "tags": []
     },
-    "lib0-childlib0-lib0childlib0component0": {
+    "lib0/childlib0/lib0childlib0component0": {
+      "tags": []
+    },
+    "baseline/agnostic/impl/src": {
+      "tags": []
+    },
+    "baseline/agnostic/model": {
+      "tags": []
+    },
+    "baseline/agnostic/constants/impl/src": {
+      "tags": []
+    },
+    "baseline/agnostic/constants/model": {
+      "tags": []
+    },
+    "baseline/agnostic/faker/impl/src": {
+      "tags": []
+    },
+    "baseline/agnostic/faker/model": {
+      "tags": []
+    },
+    "baseline/agnostic/ioc/impl/src": {
+      "tags": []
+    },
+    "baseline/agnostic/ioc/model": {
+      "tags": []
+    },
+    "baseline/agnostic/logger/impl/src": {
+      "tags": []
+    },
+    "baseline/agnostic/logger/model": {
       "tags": []
     }
   },

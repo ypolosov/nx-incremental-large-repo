@@ -1,6 +1,6 @@
 module.exports = {
   preset: '../../jest.preset.js',
-  coverageDirectory: '../../coverage/libs/lib0/src',
+  coverageDirectory: '../../coverage/libs/lib0/impl',
   snapshotSerializers: [
     'jest-preset-angular/build/AngularNoNgAttributesSnapshotSerializer.js',
     'jest-preset-angular/build/AngularSnapshotSerializer.js',

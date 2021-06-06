@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { Lib0Module } from '@largerepo/lib0/src';
+import { Lib0Module } from '@largerepo/lib0/impl/src';
 
 import { AppComponent } from './impl';
 

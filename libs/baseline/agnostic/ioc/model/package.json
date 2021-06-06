@@ -1,0 +1,9 @@
+{
+  "name": "@largerepo/baseline/agnostic/ioc/model",
+  "ngPackage": {
+    "dest": "../../../../../dist/libs/baseline/agnostic/ioc/model",
+    "lib": {
+      "entryFile": "index.ts"
+    }
+  }
+}

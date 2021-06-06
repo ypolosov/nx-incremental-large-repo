@@ -1,0 +1,9 @@
+{
+  "name": "@largerepo/baseline/agnostic/impl/testing",
+  "ngPackage": {
+    "dest": "../../../../../dist/libs/baseline/agnostic/impl/testing",
+    "lib": {
+      "entryFile": "index.ts"
+    }
+  }
+}

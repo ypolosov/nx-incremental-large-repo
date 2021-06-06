@@ -1,0 +1,9 @@
+{
+  "name": "@largerepo/baseline/agnostic/faker/model",
+  "ngPackage": {
+    "dest": "../../../../../dist/libs/baseline/agnostic/faker/model",
+    "lib": {
+      "entryFile": "index.ts"
+    }
+  }
+}
