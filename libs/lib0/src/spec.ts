@@ -1,17 +1,17 @@
-import { TestBed, waitForAsync } from '@angular/core/testing';
-import { Lib0Module } from './module';
+// import { TestBed, waitForAsync } from '@angular/core/testing';
+// import { Lib0Module } from './module';
 
-describe('Lib0Module', () => {
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      imports: [Lib0Module]
-    }).compileComponents();
-  }));
+// describe('Lib0Module', () => {
+//   beforeEach(waitForAsync(() => {
+//     TestBed.configureTestingModule({
+//       imports: [Lib0Module]
+//     }).compileComponents();
+//   }));
 
-  it('should create', () => {
-    expect(Lib0Module).toBeDefined();
-  });
-});
+//   it('should create', () => {
+//     expect(Lib0Module).toBeDefined();
+//   });
+// });
 
 
 // import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';

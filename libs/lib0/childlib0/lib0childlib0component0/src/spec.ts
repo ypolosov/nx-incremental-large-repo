@@ -1,17 +1,17 @@
-import { TestBed, waitForAsync } from '@angular/core/testing';
-import { Lib0childlib0component0ComponentModule } from './module';
+// import { TestBed, waitForAsync } from '@angular/core/testing';
+// import { Lib0childlib0component0ComponentModule } from './module';
 
-describe('Lib0childlib0component0ComponentModule', () => {
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      imports: [Lib0childlib0component0ComponentModule]
-    }).compileComponents();
-  }));
+// describe('Lib0childlib0component0ComponentModule', () => {
+//   beforeEach(waitForAsync(() => {
+//     TestBed.configureTestingModule({
+//       imports: [Lib0childlib0component0ComponentModule]
+//     }).compileComponents();
+//   }));
 
-  it('should create', () => {
-    expect(Lib0childlib0component0ComponentModule).toBeDefined();
-  });
-});
+//   it('should create', () => {
+//     expect(Lib0childlib0component0ComponentModule).toBeDefined();
+//   });
+// });
 
 
 // import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
