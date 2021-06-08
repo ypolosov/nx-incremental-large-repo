@@ -16,10 +16,15 @@
             "main": "apps/app0/src/main.ts",
             "polyfills": "apps/app0/src/polyfills.ts",
             "tsConfig": "apps/app0/tsconfig.app.json",
-            "aot": true,
             "assets": ["apps/app0/src/favicon.ico", "apps/app0/src/assets"],
             "styles": ["apps/app0/src/styles.css"],
-            "scripts": []
+            "scripts": [],
+            "vendorChunk": true,
+            "extractLicenses": false,
+            "buildOptimizer": false,
+            "sourceMap": true,
+            "optimization": false,
+            "namedChunks": true
           },
           "configurations": {
             "production": {
@@ -284,7 +289,9 @@
             "jestConfig": "libs/lib0/jest.config.js",
             "passWithNoTests": true
           },
-          "outputs": ["coverage/libs/lib0/childlib0/lib0childlib0component0/impl/src"]
+          "outputs": [
+            "coverage/libs/lib0/childlib0/lib0childlib0component0/impl/src"
+          ]
         }
       },
       "schematics": {}
@@ -365,7 +372,6 @@
       },
       "schematics": {}
     },
-  
     "baseline/agnostic/constants/model": {
       "projectType": "library",
       "root": "libs/baseline/agnostic/constants/model",
@@ -442,7 +448,6 @@
       },
       "schematics": {}
     },
-  
     "baseline/agnostic/faker/model": {
       "projectType": "library",
       "root": "libs/baseline/agnostic/faker/model",
@@ -519,7 +524,6 @@
       },
       "schematics": {}
     },
-  
     "baseline/agnostic/ioc/model": {
       "projectType": "library",
       "root": "libs/baseline/agnostic/ioc/model",
@@ -596,7 +600,6 @@
       },
       "schematics": {}
     },
-  
     "baseline/agnostic/logger/model": {
       "projectType": "library",
       "root": "libs/baseline/agnostic/logger/model",
@@ -674,11 +677,6 @@
       "schematics": {}
     }
   },
-
-
-
-
-
   "cli": {
     "defaultCollection": "@nrwl/angular"
   },
