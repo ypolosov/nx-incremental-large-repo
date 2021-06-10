@@ -2,6 +2,23 @@
 # yarn lockfile v1
 
 
+"@angular-architects/module-federation-runtime@^12.1.1":
+  version "12.1.1"
+  resolved "https://registry.yarnpkg.com/@angular-architects/module-federation-runtime/-/module-federation-runtime-12.1.1.tgz#1bda7a9da12e040cbdf3282db71cccb6e6f5dc9e"
+  integrity sha512-i5SNEjlbN3tyG2xNjcFgLt+MtEVMle+1NgXc5tITtRsKg5fzXx5uEeSRzv72XJQSagDUtQhndCziabWAWaHH+Q==
+  dependencies:
+    tslib "^2.0.0"
+
+"@angular-architects/module-federation@^12.1.1":
+  version "12.1.1"
+  resolved "https://registry.yarnpkg.com/@angular-architects/module-federation/-/module-federation-12.1.1.tgz#d416a2efceea646f0c28da0f6ceaa365352f725b"
+  integrity sha512-OksGF5U/exk410QYHIKRMS3pFvTQXhFOct3r4BCzRpDMGl1305sOoGhNERjXJqbZENI9CdhGCdYKomF9+feQMQ==
+  dependencies:
+    "@angular-architects/module-federation-runtime" "^12.1.1"
+    ngx-build-plus "^12.0.0"
+    rxjs "~6.6.3"
+    word-wrap "^1.2.3"
+
 "@angular-devkit/architect@0.1200.3":
   version "0.1200.3"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.1200.3.tgz#b919f78bcc0fac645733804329443b9e8500dab4"
@@ -9072,6 +9089,14 @@ ng-packagr@12.0.3:
     sass "^1.32.8"
     stylus "^0.54.8"
 
+ngx-build-plus@^12.0.0, ngx-build-plus@^12.0.1:
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/ngx-build-plus/-/ngx-build-plus-12.0.1.tgz#3cd5da9fd91d6fdc1d86ab6c7c5bef5c24c2ae78"
+  integrity sha512-eq4D66yK3iEWuGKn/0Mh0CEfO8zzc17ZZLMpN/tFIcDEcGwFCHs8absQRAc90kBNsxIXQxPqjxUDXdISfFKGRw==
+  dependencies:
+    "@schematics/angular" "^12.0.0"
+    webpack-merge "^5.0.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.npmjs.org/nice-try/-/nice-try-1.0.5.tgz"
@@ -11713,7 +11738,7 @@ rxjs@6.5.5, rxjs@^6.5.0, rxjs@^6.5.3, rxjs@^6.5.4:
   dependencies:
     tslib "^1.9.0"
 
-rxjs@6.6.7, rxjs@^6.6.6:
+rxjs@6.6.7, rxjs@^6.6.6, rxjs@~6.6.3:
   version "6.6.7"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.6.7.tgz#90ac018acabf491bf65044235d5863c4dab804c9"
   integrity sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==
@@ -13095,6 +13120,11 @@ tsconfig-paths@^3.4.0, tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
+tslib@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
+  integrity sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
+
 tslib@2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.1.0.tgz"
@@ -13597,6 +13627,14 @@ webpack-merge@5.7.3:
   version "5.7.3"
   resolved "https://registry.npmjs.org/webpack-merge/-/webpack-merge-5.7.3.tgz"
   integrity sha512-6/JUQv0ELQ1igjGDzHkXbVDRxkfA57Zw7PfiupdLFJYrgFqY5ZP8xxbpp2lU3EPwYx89ht5Z/aDkD40hFCm5AA==
+  dependencies:
+    clone-deep "^4.0.1"
+    wildcard "^2.0.0"
+
+webpack-merge@^5.0.0:
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-5.8.0.tgz#2b39dbf22af87776ad744c390223731d30a68f61"
+  integrity sha512-/SaI7xY0831XwP6kzuwhKWVKDP9t1QY1h65lAFLbZqMPIuYcD9QAW4u9STIbU9kaJbPBB/geU/gLr1wDjOhQ+Q==
   dependencies:
     clone-deep "^4.0.1"
     wildcard "^2.0.0"

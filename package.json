@@ -23,7 +23,8 @@
     "dep-graph": "nx dep-graph",
     "help": "nx help",
     "postinstall": "ngcc --properties es2015 browser module main",
-    "workspace-generator": "nx workspace-generator"
+    "workspace-generator": "nx workspace-generator",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,
   "dependencies": {
@@ -40,10 +41,11 @@
     "core-js": "^2.5.4",
     "postcss": "^8.3.0",
     "rxjs": "6.5.5",
-    "tslib": "^1.10.0",
+    "tslib": "2.0.0",
     "zone.js": "0.11.4"
   },
   "devDependencies": {
+    "@angular-architects/module-federation": "^12.1.1",
     "@angular-devkit/build-angular": "12.0.3",
     "@angular-eslint/eslint-plugin": "12.0.0",
     "@angular-eslint/eslint-plugin-template": "12.0.0",
@@ -74,6 +76,7 @@
     "jest": "26.2.2",
     "jest-preset-angular": "8.4.0",
     "ng-packagr": "12.0.3",
+    "ngx-build-plus": "^12.0.1",
     "node-watch": "^0.6.3",
     "prettier": "2.2.1",
     "tree-kill": "^1.2.2",
